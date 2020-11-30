@@ -64,3 +64,47 @@ fun factorial(n:Int){
     }
     print(res)
 }
+
+fun range(){
+    // range
+    for(i in 1..9){
+        print("$i")
+    }
+// half range
+    for(i in 1 until 9){
+        print("$i")
+    }
+}
+
+//write a for loop to iterate over the range (1 to 1000) and print the square roo of each number
+
+fun loopSquare(){
+    for(i in 1..1000){
+        println(Math.sqrt(i.toDouble()))
+    }
+
+
+}
+///1) use repeat statement and print 1 to 100 numbers
+fun repeat(){
+    var i=1
+    repeat(100){
+        println(i)
+        i++
+    }
+}
+
+//write a when expression that takes an age as an integer and prints out the life stage related to that age. you can use categorization as  follows: 0to 2 years,
+// Infant: 3 to 12 ,Child:13 to 19 , Teenager 20 to 39 , Adult 40 to 60 Middle aged : 61+ , Elderly
+///2) write a when expression that destructures a pair containing a string and an integer.  the string is a name ,
+// and the integer is an age. use the use the same cases that you used in the previous exercise to print out the name followed by the life stage. e.g for Dick it would print out "Dick is an adult."
+fun whenFunction(age:Int,name:String){
+    when(age){
+        in 3..12 -> println("$name is and Infant")
+        in 13..19 -> println("$name is a child")
+        in 20..39 -> println("$name is a Teenager")
+        in 40..59 -> println("$name is Middle")
+        else-> print("$name is old")
+    }
+}
+
