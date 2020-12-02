@@ -108,3 +108,48 @@ fun whenFunction(age:Int,name:String){
     }
 }
 
+
+//1) write function named PrintFullName that takes two strings called firstname and lastname.
+//the function should print out the full name definded as firstname+lastname
+//2) call printFull Name using maned arguments.
+//3) write a function named calculateFullname that returns the full name as a string use it to store your own full name in a constant.
+//4)change calculateFullName to return a Pair containing both the full name and the length of the name . you can find a string's lenth by using the length property.
+//5) write a function that computes a value from the Fibonacci sequence.
+
+fun printFullName(firstName:String="ronnie", lastName:String="mao") {
+    print(firstName+lastName)
+}
+fun  printFullName2(firstName:String, lastName:String) {
+    print(firstName+lastName)
+}
+
+class Name(name: String, length: Int) {
+    var name:String =""
+    var size:Int = 0
+
+}
+
+fun calculateFullname(firstName:String, lastName:String):Name{
+    val name=firstName+lastName
+    val people = Name(name,name.length)
+    return people
+}
+
+fun Fibonacci(){
+    var a1 = 1
+    var a2 = 1
+    print("$a1 $a2 ")
+    for (i in 3..100) {
+        val a3 = a1 + a2
+        print("$a3 ")
+        a1 = a2
+        a2 = a3
+    }
+}
+
+//Make a nullable String called myFavoriteSong. if you have a favorite song, set it to a string representing that song. if you have more than one favorite song or no favorite, set the nullable to null
+// 1) Not-null assertion operator
+//!!
+//2)Safe calls operator( ?. )
+//3)Elvis operator ( ?: )
+
