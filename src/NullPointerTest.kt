@@ -1,6 +1,4 @@
 
-
-
 fun main(args: Array<String>) {
 
     val myFavoriteSong : String? = null

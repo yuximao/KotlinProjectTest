@@ -147,9 +147,3 @@ fun Fibonacci(){
     }
 }
 
-//Make a nullable String called myFavoriteSong. if you have a favorite song, set it to a string representing that song. if you have more than one favorite song or no favorite, set the nullable to null
-// 1) Not-null assertion operator
-//!!
-//2)Safe calls operator( ?. )
-//3)Elvis operator ( ?: )
-
